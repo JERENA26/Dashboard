@@ -1,0 +1,100 @@
+body{
+    font-family: 'Roboto',sans-serif;
+    
+    background: #eee;
+}
+.sidebar{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.698),rgba(0, 0, 0, 0.89)),url(/images/img1.jpeg);
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+}
+.bottom-border{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.52);
+    
+}
+.bottom-border a{
+    text-decoration: none;
+}
+.sidebar .active{
+    background-color: rgb(240, 56, 24);
+    border-radius: 7px;
+    box-shadow: 2px 5px 20px black;
+    transition: all .3s ease;
+}
+.sidebar .active:hover{
+    background-color: rgb(255, 99, 71);
+    transform: translateY(-1px);
+}
+.sidebar-link{
+    transition: all .3s ease;
+}
+.sidebar-link:hover{
+    background-color: rgba(128, 128, 128, 0.671);
+    border-radius: 7px;
+}
+.search{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid gray;
+    transition: all .4s ease;
+}
+.search:focus{
+    background: transparent;
+    border-bottom: 2px solid rgb(240, 56, 24);
+    box-shadow: none;
+
+}
+.search-btn{
+    border-radius: 50%;
+    padding: 10px 16px;
+    transition: all .4s ease;
+}
+.search-btn:hover{
+    background-color: rgb(248, 244, 244);
+    transform: translateY(-1px);
+}
+.icon-notify{
+    position: relative;
+}
+.icon-notify-link::after{
+    content: " ";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgb(240, 56, 24);
+}
+.card-effect{
+    transition: all .4s;
+    box-shadow: 3px 3px 3px  rgba(128, 128, 128, 0.644);
+}
+.card-effect:hover{
+    box-shadow: 3px 3px 13px  rgba(128, 128, 128, 0.644);
+    transform: translateY(-1px);
+}
+.rates h5{
+    font-size: 18px;
+}
+.side-border{
+    border-left: 3px solid rgb(240, 56, 24);
+}
+.customer ul a{
+    font-size: 20px;
+}
+.text-color{
+    color:rgba(255, 68, 0, 0.753)
+}
+@media(max-width: 768px){
+    .sidebar{
+        height: auto;
+        position: static;
+    }
+    .top-bar{
+        position: static;
+    }
+}
